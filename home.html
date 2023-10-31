@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet"> <!-- Ajoutez cette ligne avec le chemin de votre fichier CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <title>Document</title>
+    <br>
+    <span style="padding-left: 90px;">
+        EN<svg xmlns="http://www.w3.org/2000/svg"  style="margin-left: 10px;" height="1em"
+            viewBox="0 0 320 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+            <path
+                d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z" />
+        </svg>
+    </span>
+    <span style="margin-right: 1100px; padding-left: 20px;">
+        USD <svg xmlns="http://www.w3.org/2000/svg" height="1em" style="margin-left: 10px;"
+            viewBox="0 0 320 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+            <path
+                d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z" />
+        </svg>
+    </span>
+    <span style="padding-right: 10px;"> <svg style="padding-right: 10px;" xmlns="http://www.w3.org/2000/svg"
+            height="1em"
+            viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+            <path
+                d="M304 128a80 80 0 1 0 -160 0 80 80 0 1 0 160 0zM96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM49.3 464H398.7c-8.9-63.3-63.3-112-129-112H178.3c-65.7 0-120.1 48.7-129 112zM0 482.3C0 383.8 79.8 304 178.3 304h91.4C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7H29.7C13.3 512 0 498.7 0 482.3z" />
+        </svg>My Profile
+    </span>
+    <span> <svg style="padding-right: 10px;" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512">
+            <path
+                d="M388.32,104.1a4.66,4.66,0,0,0-4.4-4c-2,0-37.23-.8-37.23-.8s-21.61-20.82-29.62-28.83V503.2L442.76,472S388.72,106.5,388.32,104.1ZM288.65,70.47a116.67,116.67,0,0,0-7.21-17.61C271,32.85,255.42,22,237,22a15,15,0,0,0-4,.4c-.4-.8-1.2-1.2-1.6-2C223.4,11.63,213,7.63,200.58,8c-24,.8-48,18-67.25,48.83-13.61,21.62-24,48.84-26.82,70.06-27.62,8.4-46.83,14.41-47.23,14.81-14,4.4-14.41,4.8-16,18-1.2,10-38,291.82-38,291.82L307.86,504V65.67a41.66,41.66,0,0,0-4.4.4S297.86,67.67,288.65,70.47ZM233.41,87.69c-16,4.8-33.63,10.4-50.84,15.61,4.8-18.82,14.41-37.63,25.62-50,4.4-4.4,10.41-9.61,17.21-12.81C232.21,54.86,233.81,74.48,233.41,87.69ZM200.58,24.44A27.49,27.49,0,0,1,215,28c-6.4,3.2-12.81,8.41-18.81,14.41-15.21,16.42-26.82,42-31.62,66.45-14.42,4.41-28.83,8.81-42,12.81C131.33,83.28,163.75,25.24,200.58,24.44ZM154.15,244.61c1.6,25.61,69.25,31.22,73.25,91.66,2.8,47.64-25.22,80.06-65.65,82.47-48.83,3.2-75.65-25.62-75.65-25.62l10.4-44s26.82,20.42,48.44,18.82c14-.8,19.22-12.41,18.81-20.42-2-33.62-57.24-31.62-60.84-86.86-3.2-46.44,27.22-93.27,94.47-97.68,26-1.6,39.23,4.81,39.23,4.81L221.4,225.39s-17.21-8-37.63-6.4C154.15,221,153.75,239.8,154.15,244.61ZM249.42,82.88c0-12-1.6-29.22-7.21-43.63,18.42,3.6,27.22,24,31.23,36.43Q262.63,78.68,249.42,82.88Z" />
+        </svg>0 Items</span> <span style="padding-left: 30px;" class="price">
+        $0.00
+    </span>
+    <span style="padding-left: 50px;"><svg xmlns="http://www.w3.org/2000/svg" height="1em"
+            viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+            <path
+                d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" />
+        </svg>
+    </span>
+    <hr>
+</head>
+
+<body>
+
+    <br><br><br>
+    <!-- <h1 class="bouncer "> Bouncer</h1>
+    
+    <nav class="nav text-center">
+        <a class="nav-link active" href="#">Home </a>
+        <a class="nav-link" href="#">STORE</a>
+        <a class="nav-link" href="#">IPHONE</a>
+        <a class="nav-link disabled" href="#">IPAD</a>
+        <a class="nav-link disabled" href="#">MACBOOK</a>
+        <a class="nav-link disabled" href="#">ACCESOIRES</a>
+
+      </nav> -->
+
+    <div>
+        <center>
+            <h1 class="Bouncer">Bouncer</h1>
+        </center><BR>
+        <nav>
+            <ul class="navbar-list">
+                <li>Home</li>
+                <li>STORE</li>
+                <li>IPHONE</li>
+                <li>MACBOOK</li>
+                <li>ACCESSOIRES</li>
+            </ul>
+        </nav>
+    </div>
+    <br>
+    <div class="first-div">
+
+        <div class="product">
+            <center>
+                <h3>IPhone X</h3>
+                <p style="color: white;">Lorem Ipsum is simply dummy text of the
+                    printing and typesetting industry. Lorem Ipsum
+                    has been the industry's standard dummy.</p>
+                <h3> More</h3>
+            </center>
+        </div>
+
+
+        <img src="assests\MicrosoftTeams-image.png" class="iphone" alt="Description de l'image"
+            style="width: 600px; height: 600;">
+    </div>
+
+    </div>
+
+    <div class="image-container">
+        <div class="image-group">
+
+            <div class="small-image" style="background-color: #FF6875;">
+
+                <div class="content">
+                    <h4 style="color: white;">IPhone 6</h4>
+                    <p style="color: white;">Lorem Ipsum dolor sit amet, consectetur adipiscing elit, labor</p>
+                    <h6 style="color: white;">$900</h6>
+                </div>
+                <img src="assests\iphone.png" alt="Image 1" class="image">
+
+            </div>
+
+            <div class="small-image" style="background-color: aliceblue;">
+                <img src="assests\10.png" alt="Image 2" class="image">
+            </div>
+            <div class="small-image" style="background-color: gray;">
+                <img src="assests\cam.png" alt="Image 3" class="image">
+
+            </div>
+        </div>
+    </div>
+    <br><br>
+    <div>
+        <center>
+            <h1 class="seller">Best Seller</h1>
+        </center><BR>
+        <nav>
+            <ul class="navbar-list">
+                <li>All</li>
+                <li>Mac</li>
+                <li>IPHONE</li>
+                <li>iPad</li>
+                <li>iPod</li>
+                <li>Accessoires</li>
+            </ul>
+        </nav>
+    </div>
+    <!-- Ajoutez ceci sous la section "Best Seller" -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card">
+
+                    <img src="assests/12.png" class="card-img-top" alt="Image 1">
+                    <div class="card-body">
+                        <center>
+                            <h6 class="card-title">Apple MacBook Pro</h6>
+                            <p class="card-text">Description of Product 1.</p>
+                            <!-- <div class="rating">
+                                <i class="fas fa-star" style="color:#FFD648; "></i>
+                                <i class="fas fa-star" style="color:#FFD648"></i>
+                                <i class="fas fa-star" style="color:#FFD648"></i>
+                                <i class="fas fa-star" style="color:#FFD648"></i>
+                                <i class="far fa-star"></i>
+                            </div> -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="73" height="11" viewBox="0 0 73 11"
+                                fill="none">
+                                <g clip-path="url(#clip0_0_246)">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M38.2941 6.97351L39.279 10.7531L36.0191 8.46985L32.5492 10.6315L33.8894 6.89392L30.76 4.45117L34.8481 4.42456L36.384 0.753052L37.5704 4.47412L41.6491 4.6477L38.2941 6.97351V6.97351Z"
+                                        fill="#FFC600" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M22.9142 6.97351L23.8989 10.7531L20.6391 8.46985L17.1692 10.6315L18.5093 6.89392L15.3799 4.45117L19.4681 4.42456L21.004 0.753052L22.1903 4.47412L26.269 4.6477L22.9142 6.97351V6.97351Z"
+                                        fill="#FFC600" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M7.53411 6.97351L8.51901 10.7531L5.2591 8.46985L1.78921 10.6315L3.1294 6.89392L0 4.45117L4.08811 4.42456L5.62399 0.753052L6.81039 4.47412L10.8891 4.6477L7.53411 6.97351V6.97351Z"
+                                        fill="#FFC600" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M53.6739 6.97351L54.6586 10.7531L51.3989 8.46985L47.929 10.6315L49.269 6.89392L46.1396 4.45117L50.2278 4.42456L51.7637 0.753052L52.9501 4.47412L57.0287 4.6477L53.6739 6.97351V6.97351Z"
+                                        fill="#FFC600" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M69.0541 6.97351L70.039 10.7531L66.7791 8.46985L63.3092 10.6315L64.6494 6.89392L61.52 4.45117L65.6081 4.42456L67.144 0.753052L68.3304 4.47412L72.4091 4.6477L69.0541 6.97351V6.97351Z"
+                                        fill="#C1C8CE" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_0_246">
+                                        <rect width="72.4091" height="10" fill="white"
+                                            transform="translate(0 0.753052)" />
+                                    </clipPath>
+                                </defs>
+                            </svg><br>
+                            <span style="color: red;"> $499 </span>
+                            <span style="color: gray; text-decoration: line-through;">$500</span>
+                        </center>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="assests/12.png" class="card-img-top" alt="Image 1">
+                    <div class="card-body">
+                        <center>
+                            <h6 class="card-title">Apple MacBook Pro</h6>
+                            <p class="card-text">Description of Product 1.</p>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="73" height="11" viewBox="0 0 73 11"
+                                fill="none">
+                                <g clip-path="url(#clip0_0_246)">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M38.2941 6.97351L39.279 10.7531L36.0191 8.46985L32.5492 10.6315L33.8894 6.89392L30.76 4.45117L34.8481 4.42456L36.384 0.753052L37.5704 4.47412L41.6491 4.6477L38.2941 6.97351V6.97351Z"
+                                        fill="#FFC600" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M22.9142 6.97351L23.8989 10.7531L20.6391 8.46985L17.1692 10.6315L18.5093 6.89392L15.3799 4.45117L19.4681 4.42456L21.004 0.753052L22.1903 4.47412L26.269 4.6477L22.9142 6.97351V6.97351Z"
+                                        fill="#FFC600" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M7.53411 6.97351L8.51901 10.7531L5.2591 8.46985L1.78921 10.6315L3.1294 6.89392L0 4.45117L4.08811 4.42456L5.62399 0.753052L6.81039 4.47412L10.8891 4.6477L7.53411 6.97351V6.97351Z"
+                                        fill="#FFC600" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M53.6739 6.97351L54.6586 10.7531L51.3989 8.46985L47.929 10.6315L49.269 6.89392L46.1396 4.45117L50.2278 4.42456L51.7637 0.753052L52.9501 4.47412L57.0287 4.6477L53.6739 6.97351V6.97351Z"
+                                        fill="#FFC600" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M69.0541 6.97351L70.039 10.7531L66.7791 8.46985L63.3092 10.6315L64.6494 6.89392L61.52 4.45117L65.6081 4.42456L67.144 0.753052L68.3304 4.47412L72.4091 4.6477L69.0541 6.97351V6.97351Z"
+                                        fill="#C1C8CE" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_0_246">
+                                        <rect width="72.4091" height="10" fill="white"
+                                            transform="translate(0 0.753052)" />
+                                    </clipPath>
+                                </defs>
+                            </svg><br>
+                            <span style="color: red;"> $499 </span>
+                            <span style="color: gray; text-decoration: line-through;">$500</span>
+
+                        </center>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="assests/12.png" class="card-img-top" alt="Image 1">
+                    <div class="card-body">
+                        <center>
+                            <h6 class="card-title">Apple MacBook Pro</h6>
+                            <p class="card-text">Description of Product 1.</p>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="73" height="11" viewBox="0 0 73 11"
+                                fill="none">
+                                <g clip-path="url(#clip0_0_246)">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M38.2941 6.97351L39.279 10.7531L36.0191 8.46985L32.5492 10.6315L33.8894 6.89392L30.76 4.45117L34.8481 4.42456L36.384 0.753052L37.5704 4.47412L41.6491 4.6477L38.2941 6.97351V6.97351Z"
+                                        fill="#FFC600" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M22.9142 6.97351L23.8989 10.7531L20.6391 8.46985L17.1692 10.6315L18.5093 6.89392L15.3799 4.45117L19.4681 4.42456L21.004 0.753052L22.1903 4.47412L26.269 4.6477L22.9142 6.97351V6.97351Z"
+                                        fill="#FFC600" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M7.53411 6.97351L8.51901 10.7531L5.2591 8.46985L1.78921 10.6315L3.1294 6.89392L0 4.45117L4.08811 4.42456L5.62399 0.753052L6.81039 4.47412L10.8891 4.6477L7.53411 6.97351V6.97351Z"
+                                        fill="#FFC600" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M53.6739 6.97351L54.6586 10.7531L51.3989 8.46985L47.929 10.6315L49.269 6.89392L46.1396 4.45117L50.2278 4.42456L51.7637 0.753052L52.9501 4.47412L57.0287 4.6477L53.6739 6.97351V6.97351Z"
+                                        fill="#FFC600" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M69.0541 6.97351L70.039 10.7531L66.7791 8.46985L63.3092 10.6315L64.6494 6.89392L61.52 4.45117L65.6081 4.42456L67.144 0.753052L68.3304 4.47412L72.4091 4.6477L69.0541 6.97351V6.97351Z"
+                                        fill="#C1C8CE" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_0_246">
+                                        <rect width="72.4091" height="10" fill="white"
+                                            transform="translate(0 0.753052)" />
+                                    </clipPath>
+                                </defs>
+                            </svg><br>
+                            <span style="color: red;"> $499 </span>
+                            <span style="color: gray; text-decoration: line-through;">$500</span>
+                        </center>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="assests/12.png" class="card-img-top" alt="Image 1">
+                    <div class="card-body">
+                        <center>
+                            <h6 class="card-title">Apple MacBook Pro</h6>
+                            <p class="card-text">Description of Product 1.</p>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="73" height="11" viewBox="0 0 73 11"
+                                fill="none">
+                                <g clip-path="url(#clip0_0_246)">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M38.2941 6.97351L39.279 10.7531L36.0191 8.46985L32.5492 10.6315L33.8894 6.89392L30.76 4.45117L34.8481 4.42456L36.384 0.753052L37.5704 4.47412L41.6491 4.6477L38.2941 6.97351V6.97351Z"
+                                        fill="#FFC600" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M22.9142 6.97351L23.8989 10.7531L20.6391 8.46985L17.1692 10.6315L18.5093 6.89392L15.3799 4.45117L19.4681 4.42456L21.004 0.753052L22.1903 4.47412L26.269 4.6477L22.9142 6.97351V6.97351Z"
+                                        fill="#FFC600" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M7.53411 6.97351L8.51901 10.7531L5.2591 8.46985L1.78921 10.6315L3.1294 6.89392L0 4.45117L4.08811 4.42456L5.62399 0.753052L6.81039 4.47412L10.8891 4.6477L7.53411 6.97351V6.97351Z"
+                                        fill="#FFC600" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M53.6739 6.97351L54.6586 10.7531L51.3989 8.46985L47.929 10.6315L49.269 6.89392L46.1396 4.45117L50.2278 4.42456L51.7637 0.753052L52.9501 4.47412L57.0287 4.6477L53.6739 6.97351V6.97351Z"
+                                        fill="#FFC600" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M69.0541 6.97351L70.039 10.7531L66.7791 8.46985L63.3092 10.6315L64.6494 6.89392L61.52 4.45117L65.6081 4.42456L67.144 0.753052L68.3304 4.47412L72.4091 4.6477L69.0541 6.97351V6.97351Z"
+                                        fill="#C1C8CE" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_0_246">
+                                        <rect width="72.4091" height="10" fill="white"
+                                            transform="translate(0 0.753052)" />
+                                    </clipPath>
+                                </defs>
+                            </svg><br>
+                            <span style="color: red;"> $499 </span>
+                            <span style="color: gray; text-decoration: line-through;">$500</span>
+                        </center>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="assests/12.png" class="card-img-top" alt="Image 1">
+                    <div class="card-body">
+                        <center>
+                            <h6 class="card-title">Apple MacBook Pro</h6>
+                            <p class="card-text">Description of Product 1.</p>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="73" height="11" viewBox="0 0 73 11"
+                                fill="none">
+                                <g clip-path="url(#clip0_0_246)">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M38.2941 6.97351L39.279 10.7531L36.0191 8.46985L32.5492 10.6315L33.8894 6.89392L30.76 4.45117L34.8481 4.42456L36.384 0.753052L37.5704 4.47412L41.6491 4.6477L38.2941 6.97351V6.97351Z"
+                                        fill="#FFC600" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M22.9142 6.97351L23.8989 10.7531L20.6391 8.46985L17.1692 10.6315L18.5093 6.89392L15.3799 4.45117L19.4681 4.42456L21.004 0.753052L22.1903 4.47412L26.269 4.6477L22.9142 6.97351V6.97351Z"
+                                        fill="#FFC600" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M7.53411 6.97351L8.51901 10.7531L5.2591 8.46985L1.78921 10.6315L3.1294 6.89392L0 4.45117L4.08811 4.42456L5.62399 0.753052L6.81039 4.47412L10.8891 4.6477L7.53411 6.97351V6.97351Z"
+                                        fill="#FFC600" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M53.6739 6.97351L54.6586 10.7531L51.3989 8.46985L47.929 10.6315L49.269 6.89392L46.1396 4.45117L50.2278 4.42456L51.7637 0.753052L52.9501 4.47412L57.0287 4.6477L53.6739 6.97351V6.97351Z"
+                                        fill="#FFC600" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M69.0541 6.97351L70.039 10.7531L66.7791 8.46985L63.3092 10.6315L64.6494 6.89392L61.52 4.45117L65.6081 4.42456L67.144 0.753052L68.3304 4.47412L72.4091 4.6477L69.0541 6.97351V6.97351Z"
+                                        fill="#C1C8CE" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_0_246">
+                                        <rect width="72.4091" height="10" fill="white"
+                                            transform="translate(0 0.753052)" />
+                                    </clipPath>
+                                </defs>
+                            </svg><br>
+                            <span style="color: red;"> $499 </span>
+                            <span style="color: gray; text-decoration: line-through;">$500</span>
+                        </center>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="assests/12.png" class="card-img-top" alt="Image 1">
+                    <div class="card-body">
+                        <center>
+                            <h6 class="card-title">Apple MacBook Pro</h6>
+                            <p class="card-text">Description of Product 1.</p>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="73" height="11" viewBox="0 0 73 11"
+                                fill="none">
+                                <g clip-path="url(#clip0_0_246)">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M38.2941 6.97351L39.279 10.7531L36.0191 8.46985L32.5492 10.6315L33.8894 6.89392L30.76 4.45117L34.8481 4.42456L36.384 0.753052L37.5704 4.47412L41.6491 4.6477L38.2941 6.97351V6.97351Z"
+                                        fill="#FFC600" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M22.9142 6.97351L23.8989 10.7531L20.6391 8.46985L17.1692 10.6315L18.5093 6.89392L15.3799 4.45117L19.4681 4.42456L21.004 0.753052L22.1903 4.47412L26.269 4.6477L22.9142 6.97351V6.97351Z"
+                                        fill="#FFC600" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M7.53411 6.97351L8.51901 10.7531L5.2591 8.46985L1.78921 10.6315L3.1294 6.89392L0 4.45117L4.08811 4.42456L5.62399 0.753052L6.81039 4.47412L10.8891 4.6477L7.53411 6.97351V6.97351Z"
+                                        fill="#FFC600" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M53.6739 6.97351L54.6586 10.7531L51.3989 8.46985L47.929 10.6315L49.269 6.89392L46.1396 4.45117L50.2278 4.42456L51.7637 0.753052L52.9501 4.47412L57.0287 4.6477L53.6739 6.97351V6.97351Z"
+                                        fill="#FFC600" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M69.0541 6.97351L70.039 10.7531L66.7791 8.46985L63.3092 10.6315L64.6494 6.89392L61.52 4.45117L65.6081 4.42456L67.144 0.753052L68.3304 4.47412L72.4091 4.6477L69.0541 6.97351V6.97351Z"
+                                        fill="#C1C8CE" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_0_246">
+                                        <rect width="72.4091" height="10" fill="white"
+                                            transform="translate(0 0.753052)" />
+                                    </clipPath>
+                                </defs>
+                            </svg><br>
+                            <span style="color: red;"> $499 </span>
+                            <span style="color: gray; text-decoration: line-through;">$500</span>
+                        </center>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="assests/12.png" class="card-img-top" alt="Image 1">
+                    <div class="card-body">
+                        <center>
+                            <h6 class="card-title">Apple MacBook Pro</h6>
+                            <p class="card-text">Description of Product 1.</p>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="73" height="11" viewBox="0 0 73 11"
+                                fill="none">
+                                <g clip-path="url(#clip0_0_246)">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M38.2941 6.97351L39.279 10.7531L36.0191 8.46985L32.5492 10.6315L33.8894 6.89392L30.76 4.45117L34.8481 4.42456L36.384 0.753052L37.5704 4.47412L41.6491 4.6477L38.2941 6.97351V6.97351Z"
+                                        fill="#FFC600" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M22.9142 6.97351L23.8989 10.7531L20.6391 8.46985L17.1692 10.6315L18.5093 6.89392L15.3799 4.45117L19.4681 4.42456L21.004 0.753052L22.1903 4.47412L26.269 4.6477L22.9142 6.97351V6.97351Z"
+                                        fill="#FFC600" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M7.53411 6.97351L8.51901 10.7531L5.2591 8.46985L1.78921 10.6315L3.1294 6.89392L0 4.45117L4.08811 4.42456L5.62399 0.753052L6.81039 4.47412L10.8891 4.6477L7.53411 6.97351V6.97351Z"
+                                        fill="#FFC600" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M53.6739 6.97351L54.6586 10.7531L51.3989 8.46985L47.929 10.6315L49.269 6.89392L46.1396 4.45117L50.2278 4.42456L51.7637 0.753052L52.9501 4.47412L57.0287 4.6477L53.6739 6.97351V6.97351Z"
+                                        fill="#FFC600" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M69.0541 6.97351L70.039 10.7531L66.7791 8.46985L63.3092 10.6315L64.6494 6.89392L61.52 4.45117L65.6081 4.42456L67.144 0.753052L68.3304 4.47412L72.4091 4.6477L69.0541 6.97351V6.97351Z"
+                                        fill="#C1C8CE" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_0_246">
+                                        <rect width="72.4091" height="10" fill="white"
+                                            transform="translate(0 0.753052)" />
+                                    </clipPath>
+                                </defs>
+                            </svg><br>
+                            <span style="color: red;"> $499 </span>
+                            <span style="color: gray; text-decoration: line-through;">$500</span>
+                        </center>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="assests/12.png" class="card-img-top" alt="Image 1">
+                    <div class="card-body">
+                        <div class="likeOrBuy">
+                            <button><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><style>svg{fill:#045bf1}</style><path d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z"/></svg></i></button>
+                            <button><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"><style>svg{fill:#354f7e}</style><path d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"/></svg></button>
+                        </div>
+                        <center>
+                            <h6 class="card-title">Apple MacBook Pro</h6>
+                            <p class="card-text">Description of Product 1.</p>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="73" height="11" viewBox="0 0 73 11"
+                                fill="none">
+                                <g clip-path="url(#clip0_0_246)">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M38.2941 6.97351L39.279 10.7531L36.0191 8.46985L32.5492 10.6315L33.8894 6.89392L30.76 4.45117L34.8481 4.42456L36.384 0.753052L37.5704 4.47412L41.6491 4.6477L38.2941 6.97351V6.97351Z"
+                                        fill="#FFC600" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M22.9142 6.97351L23.8989 10.7531L20.6391 8.46985L17.1692 10.6315L18.5093 6.89392L15.3799 4.45117L19.4681 4.42456L21.004 0.753052L22.1903 4.47412L26.269 4.6477L22.9142 6.97351V6.97351Z"
+                                        fill="#FFC600" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M7.53411 6.97351L8.51901 10.7531L5.2591 8.46985L1.78921 10.6315L3.1294 6.89392L0 4.45117L4.08811 4.42456L5.62399 0.753052L6.81039 4.47412L10.8891 4.6477L7.53411 6.97351V6.97351Z"
+                                        fill="#FFC600" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M53.6739 6.97351L54.6586 10.7531L51.3989 8.46985L47.929 10.6315L49.269 6.89392L46.1396 4.45117L50.2278 4.42456L51.7637 0.753052L52.9501 4.47412L57.0287 4.6477L53.6739 6.97351V6.97351Z"
+                                        fill="#FFC600" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M69.0541 6.97351L70.039 10.7531L66.7791 8.46985L63.3092 10.6315L64.6494 6.89392L61.52 4.45117L65.6081 4.42456L67.144 0.753052L68.3304 4.47412L72.4091 4.6477L69.0541 6.97351V6.97351Z"
+                                        fill="#C1C8CE" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_0_246">
+                                        <rect width="72.4091" height="10" fill="white"
+                                            transform="translate(0 0.753052)" />
+                                    </clipPath>
+                                </defs>
+                            </svg><br>
+                            <span style="color: red;"> $499 </span>
+                            <span style="color: gray; text-decoration: line-through;">$500</span>
+
+                        </center>
+                    </div>
+                </div>
+            </div>
+            <!-- Répétez le bloc de la carte ci-dessus 7 fois pour créer un total de 8 cartes -->
+        </div>
+    </div>
+    <br><br>
+    <center>
+        <h5 style="color: #2e90e5;">LOAD MORE</h5>
+    </center><br>
+
+    <div class="LOAD">
+        <div>
+
+            <h1 style="font-size: 70px; color: white;"> IPhone 6 Plus</h1>
+            <h4 style="color: white; ">
+                Performance and design . Taken right to the edge
+            </h4>
+        </div>
+        <img src="assests\iphone.png" class="iphone" alt="Description de l'image" style="width: 400px; height: 100;">
+    </div><br>
+    <div class="parent">
+        <div>           <center> <svg xmlns="http://www.w3.org/2000/svg" style="height: 80px ; "   height="1em" viewBox="0 0 640 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M112 0C85.5 0 64 21.5 64 48V96H16c-8.8 0-16 7.2-16 16s7.2 16 16 16H64 272c8.8 0 16 7.2 16 16s-7.2 16-16 16H64 48c-8.8 0-16 7.2-16 16s7.2 16 16 16H64 240c8.8 0 16 7.2 16 16s-7.2 16-16 16H64 16c-8.8 0-16 7.2-16 16s7.2 16 16 16H64 208c8.8 0 16 7.2 16 16s-7.2 16-16 16H64V416c0 53 43 96 96 96s96-43 96-96H384c0 53 43 96 96 96s96-43 96-96h32c17.7 0 32-14.3 32-32s-14.3-32-32-32V288 256 237.3c0-17-6.7-33.3-18.7-45.3L512 114.7c-12-12-28.3-18.7-45.3-18.7H416V48c0-26.5-21.5-48-48-48H112zM544 237.3V256H416V160h50.7L544 237.3zM160 368a48 48 0 1 1 0 96 48 48 0 1 1 0-96zm272 48a48 48 0 1 1 96 0 48 48 0 1 1 -96 0z"/></svg>
+</center><br>
+            <h3>
+                FREE SHIPPING
+            </h3>
+
+            <p>Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit, sed do eiusmod tempor minim
+                veniam, quis nostrud reprehenderit in
+                voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur
+            </p>
+        </div>
+        <div>
+            <center><svg xmlns="http://www.w3.org/2000/svg" style="height: 80;" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M320 96H192L144.6 24.9C137.5 14.2 145.1 0 157.9 0H354.1c12.8 0 20.4 14.2 13.3 24.9L320 96zM192 128H320c3.8 2.5 8.1 5.3 13 8.4C389.7 172.7 512 250.9 512 416c0 53-43 96-96 96H96c-53 0-96-43-96-96C0 250.9 122.3 172.7 179 136.4l0 0 0 0c4.8-3.1 9.2-5.9 13-8.4zm84 88c0-11-9-20-20-20s-20 9-20 20v14c-7.6 1.7-15.2 4.4-22.2 8.5c-13.9 8.3-25.9 22.8-25.8 43.9c.1 20.3 12 33.1 24.7 40.7c11 6.6 24.7 10.8 35.6 14l1.7 .5c12.6 3.8 21.8 6.8 28 10.7c5.1 3.2 5.8 5.4 5.9 8.2c.1 5-1.8 8-5.9 10.5c-5 3.1-12.9 5-21.4 4.7c-11.1-.4-21.5-3.9-35.1-8.5c-2.3-.8-4.7-1.6-7.2-2.4c-10.5-3.5-21.8 2.2-25.3 12.6s2.2 21.8 12.6 25.3c1.9 .6 4 1.3 6.1 2.1l0 0 0 0c8.3 2.9 17.9 6.2 28.2 8.4V424c0 11 9 20 20 20s20-9 20-20V410.2c8-1.7 16-4.5 23.2-9c14.3-8.9 25.1-24.1 24.8-45c-.3-20.3-11.7-33.4-24.6-41.6c-11.5-7.2-25.9-11.6-37.1-15l0 0-.7-.2c-12.8-3.9-21.9-6.7-28.3-10.5c-5.2-3.1-5.3-4.9-5.3-6.7c0-3.7 1.4-6.5 6.2-9.3c5.4-3.2 13.6-5.1 21.5-5c9.6 .1 20.2 2.2 31.2 5.2c10.7 2.8 21.6-3.5 24.5-14.2s-3.5-21.6-14.2-24.5c-6.5-1.7-13.7-3.4-21.1-4.7V216z"/></svg>
+            </center><br>
+            <h3>
+                100% REFUND </h3>
+            <p >Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit, sed do eiusmod tempor minim
+                veniam, quis nostrud reprehenderit in
+                voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur
+            </p>
+        </div>
+        <div>
+            <center><svg xmlns="http://www.w3.org/2000/svg" style="height: 80px;" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z"/></svg>
+            </center><br>
+            <h3>
+                SUPPORT 24/7
+            </h3>
+            <p>Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit, sed do eiusmod tempor minim
+                veniam, quis nostrud reprehenderit in
+                voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur
+            </p>
+        </div>
+        
+    </div><br><br>
+<h3>LATEST NEWS</h3><br><br>
+<div class="news">
+    <div>
+        <img src="assests\mdaghdech.png" alt="latest news" style="width: 150px; height: 50;">
+        <div>
+            <h5> Typesetting industry</h5>
+        </div>
+        <p>Lorem Ipsum is simply
+            dummy text of the printing
+            and typesetting industry.
+            </p>
+    </div>
+    <div>
+        <img src="assests\laptop.png" alt="latest news" style="width: 150px; height: 50;">
+        <div>
+            <h5> Typesetting industry</h5>
+        </div>
+        <p>Lorem Ipsum is simply
+            dummy text of the printing
+            and typesetting industry.
+            </p>
+    </div>
+    <div>
+        <img src="assests\iphone_cam.png" alt="latest news" style="width: 150px; height: 50;">
+        <div>
+            <h5> Typesetting industry</h5>
+            <p>Lorem Ipsum is simply
+                dummy text of the printing
+                and typesetting industry.
+                </p>
+        </div>
+   
+    </div>
+
+</div>
+</body>
+
+</html>
